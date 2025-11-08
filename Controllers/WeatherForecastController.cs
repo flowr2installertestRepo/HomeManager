@@ -29,5 +29,10 @@ namespace HomeManager.Controllers
             })
             .ToArray();
         }
+        [HttpGet("test", Name = "GetTest")]
+        public ActionResult<string> GetTest()
+        {
+            return "Test endpoint is working!";
+        }
     }
 }
