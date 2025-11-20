@@ -59,7 +59,8 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'HomeManager20251101105144'
+          app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
           slot-name: 'Production'
           package: .
+
           
